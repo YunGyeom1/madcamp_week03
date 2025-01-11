@@ -18,6 +18,7 @@ class Artwork(Base):
     __tablename__ = 'artwork'
 
     id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, nullable=False)
     product_id = Column(Integer, unique=True, nullable=False)
     image_url = Column(String, nullable=False)
     description_txt = Column(String, nullable=True)

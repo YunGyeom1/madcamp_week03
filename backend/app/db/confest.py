@@ -27,9 +27,6 @@ def create_art_tag(db, artwork_id, tag):
     db.refresh(art_tag)
     return art_tag
 
-# 사용자 활동 생성 함수
-# 수정된 create_user_activity 함수
-import json
 
 def create_user_activity(db, user_id, listened_artworks, listening_rates):
     # listening_rates는 dict 형태로 전달되어야 함
