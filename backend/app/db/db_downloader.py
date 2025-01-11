@@ -85,6 +85,9 @@ def download_artworks(artist_url):
         print(f"Failed to fetch artworks for {artist_url}: {response.status_code}")
 
 # 사용 예시
-artist_urls = ["pablo-picasso", "vincent-van-gogh"]  # 테스트용
-for artist_url in artists:
+artist_urls = ["paul-gauguin",
+    "jackson-pollock",
+    "henri-rousseau"]  # 테스트용
+
+for artist_url in artist_urls:
     download_artworks(artist_url)

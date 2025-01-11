@@ -25,8 +25,7 @@ def get_artworks(session: Session):
 def get_similar_artworks(
     session: Session,
     input_artwork_ids: List[int],
-    top_n: int = 50
-) -> List[Tuple[Artwork, float]]:
+    top_n: int = 50 ) -> List[Tuple[Artwork, float]]:
     """
     최근 좋아요 기반으로 유사한 작품과 유사도 점수를 반환.
 
