@@ -10,3 +10,4 @@ backend/venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib filter=lf
 Database/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
 Database/**/*.png filter=lfs diff=lfs merge=lfs -text
 Database/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Database/**/* filter=lfs diff=lfs merge=lfs -text
