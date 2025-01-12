@@ -6,6 +6,7 @@ from app.db.session import SessionLocal, init_db
 from app.routes.auth import register_user, login_user
 from app.routes.interaction import add_like, stop_listening
 from app.routes.search import search_by_tag
+from app.db.session import Base, engine
 from app.routes.recommend import get_artworks
 
 from app.schemas import (

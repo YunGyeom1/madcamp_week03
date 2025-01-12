@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -22,3 +23,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+backend/.env
+
+venv/
+# Mac에서 생기는 추가 파일
+.DS_Store
+# 가상환경, 빌드, 로컬 설정 등
+__pycache__/
+*.pyc
+
