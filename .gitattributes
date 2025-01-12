@@ -8,3 +8,5 @@ backend/venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib filter=lf
 *.pt filter=lfs diff=lfs merge=lfs
 *.pth filter=lfs diff=lfs merge=lfs
 Database/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+Database/**/*.png filter=lfs diff=lfs merge=lfs -text
+Database/**/*.jpg filter=lfs diff=lfs merge=lfs -text
