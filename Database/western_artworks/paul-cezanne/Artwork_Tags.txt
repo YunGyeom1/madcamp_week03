@@ -1,30 +1,3 @@
-Landscape with Mill
-landscape, rural, peaceful, traditional
-
-The Kiss of the Muse
-allegory, symbolic, artistic, inspiration
-
-The Four Seasons, Autumn
-seasonal, autumn, nature, vibrant
-
-The Four Seasons, Spring
-seasonal, spring, rebirth, colorful
-
-The Four Seasons, Summer
-seasonal, summer, warmth, bright
-
-The Four Seasons, Winter
-seasonal, winter, cold, serene
-
-Interior with Two Women and a Child
-interior, domestic, scene, traditional
-
-A male nude
-figure, study, anatomical, classical
-
-Fisherman on the Rocks
-seascape, solitary, rugged, natural
-
-Portrait of a Man
-portrait, formal, detailed, realistic
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e13883100da59fdce6cd6ad6ba1e8a9b088cac3110f6f2e3cd8fbfed9c8b449e
+size 606

@@ -1,30 +1,3 @@
-Self Portrait
-portrait, introspective, personal, detailed
-
-Self-portrait in a Velvet Dress
-portrait, elegant, introspective, detailed
-
-Portrait of Alicia Galant
-portrait, female, formal, realistic
-
-Portrait of Miguel N. Lira
-portrait, male, literary, formal, traditional
-
-Portrait of Alejandro Gómez Arias
-portrait, male, historical, detailed
-
-Portrait of Cristina My Sister
-portrait, familial, intimate, traditional
-
-Portrait of Lupe Marín
-portrait, female, emotional, vibrant
-
-Portrait of Virginia (Little Girl)
-portrait, child, intimate, tender
-
-Self Portrait - Time Flies
-portrait, symbolic, introspective, surreal
-
-The Bus
-genre-scene, social, everyday-life, detailed
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:75c8cd1697a71d963fa232b3ae0cb2868a465afc6f7289127aeb96dec5103197
+size 676

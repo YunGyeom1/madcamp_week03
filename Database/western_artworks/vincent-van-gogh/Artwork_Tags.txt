@@ -1,30 +1,3 @@
-The Goat Herd
-rural, landscape, animals, pastoral, traditional medium
-
-Dog
-animal, realism, everyday life, detailed, introspective
-
-Milk Jug
-still life, minimalism, light and shadow, simplistic, traditional medium
-
-Barn and Farmhouse
-rural, architecture, landscape, nostalgic, peaceful
-
-Two Sketches of a Man Leaning on His Spade
-preparatory sketch, figurative, realism, study, solemn
-
-Old Woman Asleep after Rops
-portrait, human figure, melancholic, introspective, classicism
-
-Vincent's Boarding House in Hackford Road, Brixton, London
-urban, architecture, nostalgic, light and shadow, realism
-
-Driveway
-landscape, nature, calm, light and shadow, minimalism
-
-Canal
-urban, water, cityscape, peaceful, traditional medium
-
-Austin Friars Church, London
-architecture, religious, historic, solemn, light and shadow
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:12fa7c16414fda5187081552d46e7d05ca55d0a627a2ae3deca3c8ec626f3342
+size 811

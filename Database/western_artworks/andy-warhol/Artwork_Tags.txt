@@ -1,30 +1,3 @@
-Halloween
-festival, spooky, vibrant, traditional
-
-Serious Girl
-portrait, female, contemplative, realistic
-
-A Cat Named Sam
-animal, portrait, intimate, charming
-
-Back of Seated Male
-figure, study, anatomical, seated
-
-Standing Male Torso
-figure, study, anatomical, classical
-
-Fairy and Christmas Ornaments
-fantasy, festive, colorful, whimsical
-
-Truman Capote
-portrait, literary, detailed, realistic
-
-Seated Male Nude
-figure, study, anatomical, seated, detailed
-
-Cherub and Horse
-mythological, whimsical, classical, symbolic
-
-Advertisement for I. Miller
-commercial, vibrant, stylish, artistic
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c154fab6098063c33e9edc965e6ad48b18c33d06343a8c14da39fb85bbd0daac
+size 591
