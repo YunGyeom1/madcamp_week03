@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from app.db.models import Artwork, ArtworkVector, Like
 from sentence_transformers import SentenceTransformer, util
-from typing import List
+from typing import List, Tuple
 import random
 
 # 벡터 저장
