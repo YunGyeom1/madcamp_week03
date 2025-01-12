@@ -7,3 +7,4 @@ backend/venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib filter=lf
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs
 *.pth filter=lfs diff=lfs merge=lfs
+Database/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
