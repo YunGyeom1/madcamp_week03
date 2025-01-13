@@ -1,30 +1,3 @@
-The picador
-figurative portrait realism bold dramatic
-
-House in the field
-landscape rural nature peaceful traditional medium
-
-Plaster male torso
-human figure anatomy realism detailed academical study
-
-Academical study
-preparatory sketch study detailed monochrome traditional medium
-
-Bust of young man
-portrait sculpture realism introspective classicism
-
-Female Nude from Back
-female figure nude anatomy serene naturalism
-
-The barefoot girl
-portrait everyday life melancholic detailed human figure
-
-The old fisherman
-portrait rural nostalgic solemn human figure
-
-Alicante, view of boats
-seascape cityscape vibrant dynamic composition nature
-
-View of the port of Valencia
-seascape urban peaceful light and shadow traditional medium
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa71f490f30d18cd7383a0bed1c4e1847bc68e8e8edd6eacecbd266ef09e714f
+size 731

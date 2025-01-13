@@ -1,30 +1,3 @@
-Landscape. Maridalen by Oslo
-landscape, serene, natural, impressionism
-
-Old Aker Church
-architecture, historical, religious, detailed
-
-Self-Portrait
-portrait, introspective, realistic, traditional
-
-At the Coffee Table
-interior, everyday-life, domestic, cozy
-
-Aunt Karen in the Rocking Chair
-portrait, intimate, domestic, serene
-
-Girl Kindling a Stove
-genre-scene, domestic, traditional, warm
-
-Morning
-landscape, serene, peaceful, soft-light
-
-Sister Inger
-portrait, familial, intimate, traditional
-
-Portrait of the Painter Jensen Hjell
-portrait, artistic, detailed, formal
-
-The Sick Child
-portrait, emotional, tender, melancholic
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1723d79cfe4a50bbcda2c9803224e991684c8396c1e9e413ca52769311efce5
+size 630

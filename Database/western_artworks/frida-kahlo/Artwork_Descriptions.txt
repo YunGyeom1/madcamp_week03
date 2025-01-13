@@ -1,30 +1,3 @@
-Self Portrait
-A deeply introspective self-portrait, this artwork offers a window into the artist’s soul. The detailed rendering and expressive gaze convey a mix of vulnerability and strength, creating a profound connection between the artist and the viewer.
-
-Self-portrait in a Velvet Dress
-This elegant self-portrait features the artist in a luxurious velvet dress. The rich textures and warm tones highlight both the opulence of the fabric and the quiet confidence of the artist, making it a striking and personal statement of identity.
-
-Portrait of Alicia Galant
-A refined and graceful portrait, this artwork captures Alicia Galant’s poised demeanor and subtle elegance. The artist’s attention to detail in her attire and expression adds depth and personality, celebrating her unique charm.
-
-Portrait of Miguel N. Lira
-A bold and character-driven portrait, this piece highlights Miguel N. Lira’s commanding presence. The artist’s dynamic brushwork and strong contrasts bring out the depth of his features, creating a powerful and memorable depiction.
-
-Portrait of Alejandro Gómez Arias
-This portrait of Alejandro Gómez Arias reflects his introspective and thoughtful nature. The artist’s use of soft tones and delicate shading emphasizes the contemplative mood, offering a nuanced and intimate representation of the subject.
-
-Portrait of Cristina My Sister
-A tender and heartfelt portrayal of the artist’s sister Cristina, this artwork captures her serene beauty and gentle spirit. The detailed rendering of her features and the soft, warm palette reflect the close bond between siblings.
-
-Portrait of Lupe Marín
-This vibrant portrait of Lupe Marín showcases her striking features and bold personality. The artist’s use of dynamic composition and rich colors highlights her strength and individuality, creating a powerful and evocative image.
-
-Portrait of Virginia (Little Girl)
-A delicate and endearing portrait of young Virginia, this artwork captures her innocence and curiosity. The artist’s gentle brushwork and soft lighting bring out the child’s tender expression, evoking a sense of warmth and protection.
-
-Self Portrait - Time Flies
-A symbolic and reflective self-portrait, this piece explores the passage of time. The artist’s thoughtful composition and use of imagery convey a deep sense of introspection, blending personal experience with universal themes of change and growth.
-
-The Bus
-A vivid and dynamic depiction of life on a bus, this artwork captures the diverse characters and energy of public transit. The artist’s bold colors and expressive lines bring the scene to life, highlighting the connections and stories shared in everyday moments.
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:427d20e430f9ff2e9e58cc545acd6f6a1c261ba9cefd6601bd9eca2710e3e1eb
+size 2694

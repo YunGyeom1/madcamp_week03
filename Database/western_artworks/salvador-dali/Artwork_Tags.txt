@@ -1,27 +1,3 @@
-Vilabertrin
-landscape, village, serene, traditional
-
-Landscape
-landscape, natural, peaceful, impressionism
-
-Dutch Interior
-interior, historical, detailed, traditional
-
-Landscape Near Ampurdan
-landscape, rural, vibrant, traditional
-
-Fiesta in Figueres
-festival, vibrant, lively, colorful
-
-Landscape with Animals
-landscape, pastoral, natural, detailed
-
-Cadaques
-seascape, coastal, vibrant, traditional
-
-Boat
-seascape, nautical, peaceful, serene
-
-Crepuscular Old Man
-portrait, elderly, melancholic, introspective
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b510878b4d6b4868d182364deb822220c65254289555e61245b747da0a7b200e
+size 511

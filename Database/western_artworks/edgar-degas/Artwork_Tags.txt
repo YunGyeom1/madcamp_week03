@@ -1,27 +1,3 @@
-The Child in Blue
-portrait, child, vibrant, traditional
-
-Self-portrait
-portrait, introspective, detailed, realism
-
-Landscape at Valery-sur-Somme
-landscape, serene, nature, impressionism
-
-Portrait of René de Gas
-portrait, formal, historical, detailed
-
-The Millinery Shop
-interior, everyday-life, vibrant, realism
-
-Portrait of Rene De Gas
-portrait, formal, historical, detailed
-
-Self Portrait
-portrait, introspective, detailed, realism
-
-Study for the Self Portrait
-portrait, study, detailed, preparatory
-
-Study of Gentile Bellini
-historical, study, detailed, traditional
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:dec6acb4319d3dbac7681238a8a6d38a24d30d43d6395a40b1d2ed357d06c0a4
+size 571

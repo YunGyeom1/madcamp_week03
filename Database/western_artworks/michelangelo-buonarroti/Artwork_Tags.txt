@@ -1,30 +1,3 @@
-The Torment of Saint Anthony
-religious, dramatic, detailed, historical
-
-Madonna of the Stairs
-religious, serene, intimate, traditional
-
-Crucifixion
-religious, emotional, powerful, dramatic
-
-St. Petronius
-religious, formal, detailed, historical
-
-St. Proculus
-religious, heroic, dynamic, traditional
-
-Angel with Candlestick
-religious, symbolic, graceful, serene
-
-Bacchus
-mythological, vibrant, celebratory, classical
-
-The Virgin and Child with Saint John and Angels (Manchester Madonna)
-religious, tender, familial, detailed
-
-Our Lady of Piety
-religious, emotional, tender, sorrowful
-
-Pieta
-religious, powerful, sorrowful, dramatic
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:345007b59c7a571132d1d23cca47743ff0fb554415f549a8733344bc5d9f76df
+size 631
