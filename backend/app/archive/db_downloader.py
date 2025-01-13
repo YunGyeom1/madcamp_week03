@@ -39,7 +39,7 @@ def download_artworks(artist_url):
         artworks = response.json()  # 응답이 리스트 형태일 경우 그대로 사용
         if isinstance(artworks, list):  # 리스트 여부 확인
             metadata_list = []
-            for i, artwork in enumerate(artworks[:10]):  # 최대 30개 제한
+            for i, artwork in enumerate(artworks[:10]):  # 최대 10개 제한
                 image_url = artwork.get("image", "")
                 title = artwork.get("title", "Untitled").replace("/", "-")
                 year = artwork.get("completitionYear", "Unknown")

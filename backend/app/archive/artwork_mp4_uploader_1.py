@@ -6,6 +6,8 @@ from google.cloud import storage
 from dotenv import load_dotenv
 from app.db.models import Artwork
 from app.db.session import Base
+from urllib.parse import unquote
+import re
 
 load_dotenv(dotenv_path="/Users/yungyeom/Downloads/madcamp_week3/main_project/madcamp_week03/backend/.env")
 
@@ -22,6 +24,39 @@ Base.metadata.create_all(engine)
 
 storage_client = storage.Client()
 
+def sanitize_filename(filename: str) -> str:
+    """
+    URL 인코딩된 문자 및 특수문자를 안전한 파일명으로 변환
+    """
+    # URL 인코딩 해제
+    decoded = unquote(filename)
+    
+    # 특수문자 대체 규칙
+    replace_map = {
+        " ": "_",       # 공백
+        "'": "",        # 작은따옴표
+        ",": "",        # 쉼표
+        "é": "e",       # e with acute
+        "á": "a",       # a with acute
+        "(": "",        # 여는 괄호
+        ")": "",        # 닫는 괄호
+        "\"": "",       # 큰따옴표
+        "–": "-",       # 대시 (유니코드)
+        "‘": "",        # 왼쪽 작은따옴표
+        "’": "",        # 오른쪽 작은따옴표
+    }
+    
+    # 특수문자 대체
+    for char, replacement in replace_map.items():
+        decoded = decoded.replace(char, replacement)
+
+    # 추가적인 URL 인코딩 제거
+    decoded = unquote(decoded)
+    
+    # 안전한 파일명: 알파벳, 숫자, 밑줄, 하이픈만 허용
+    sanitized = re.sub(r"[^a-zA-Z0-9_\-.]", "", decoded)
+    
+    return sanitized
 def upload_to_gcs(local_path: str, gcs_path: str) -> str:
     try:
         print(f"[INFO] GCS 업로드 시작: {local_path} -> {gcs_path}")
@@ -46,8 +81,9 @@ for artwork in artworks:
             print(f"[SKIP] Artwork {artwork.id} -> 이미지/MP3 경로가 없음.")
             continue
 
-        image_basename = os.path.basename(artwork.image_url)
-        mp3_basename = os.path.basename(artwork.description_mp3_url)
+        # 파일명 공백 제거 및 GCS 경로 설정
+        image_basename = sanitize_filename(os.path.basename(artwork.image_url))
+        mp3_basename = sanitize_filename(os.path.basename(artwork.description_mp3_url))
         gcs_image_path = f"temp_images/{image_basename}"
         gcs_mp3_path = f"temp_audio/{mp3_basename}"
 
