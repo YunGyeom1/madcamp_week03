@@ -1,9 +1,9 @@
 header {
-  position: fixed; /* 화면 상단에 고정 */
-  top: 0; /* 화면의 맨 위에 위치 */
-  left: 0; /* 화면의 왼쪽에 위치 */
-  width: 100%; /* 헤더가 화면 전체를 차지 */
-  z-index: 9999; /* 다른 요소들보다 위에 표시 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
   background: linear-gradient(-45deg, #070707, #5c5b5b);
 }
 
@@ -88,6 +88,18 @@ header {
 
 .nav-button:hover {
   color: #a2a2a2;
+}
+
+.theme-toggle-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* 클릭 시 부드러운 효과 */
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1.1); /* 호버 시 살짝 확대 */
 }
 
 /* 모달 오버레이 */
