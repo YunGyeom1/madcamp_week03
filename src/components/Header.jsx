@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/Logo.svg";
 import search from "../assets/search.svg";
 import searchbar from "../assets/search_bar.svg";
+import dayIcon from "../assets/sun.svg"; // 낮 아이콘
+import nightIcon from "../assets/moon.svg";
 import "./Header.css";
+import { useTheme } from "./ThemeContext";
 
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -40,6 +43,9 @@ const Header = () => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+
+  //낮밤
+  const { isNight, toggleTheme } = useTheme();
 
   return (
     <header className="header">
