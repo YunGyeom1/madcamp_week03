@@ -17,6 +17,7 @@ const Home = () => {
       }
       const data = await response.json();
       setArtworks(data); // artworks 상태 업데이트
+      console.log(data);
     } catch (error) {
       console.error(error);
     }
