@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Packery from "packery";
+import Masonry from "react-masonry-css";
 import "./Home.css";
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
   const fetchArtworks = async () => {
     try {
       const response = await fetch("http://localhost:8000/get"); // API 경로
+      console.log("Response received:", response);
       if (!response.ok) {
         throw new Error("Failed to fetch artworks");
       }
@@ -19,13 +20,11 @@ const Home = () => {
     }
   };
 
-  // Packery 초기화 함수
-  const initializePackery = () => {
-    const gridElement = document.querySelector(".grid");
-    new Packery(gridElement, {
-      itemSelector: ".grid-item",
-      gutter: 20,
-    });
+  const breakpointColumns = {
+    default: 3, // 기본 열 수
+    1100: 2, // 너비 1100px 이하일 때 3열
+    768: 1, // 너비 768px 이하일 때 2열
+    500: 1, // 너비 500px 이하일 때 1열
   };
 
   // 첫번째 useEffect 데이터 가져오기
@@ -33,25 +32,30 @@ const Home = () => {
     fetchArtworks();
   }, []);
 
-  //두번째 useEffect Packery 초기화
-  useEffect(() => {
-    if (artworks.length > 0) {
-      initializePackery();
-    }
-  }, [artworks]);
-
   return (
     <div className="Home">
-      <div className="grid">
+      <Masonry
+        breakpointCols={breakpointColumns}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {artworks.map((artwork) => (
           <div className="grid-item" key={artwork.id}>
             <img
               src={artwork.image_url}
               alt={artwork.artist_name || "Artwork"}
+              className="artwork-image"
             />
+            <div className="artwork-details">
+              <h3 className="artwork-title">{artwork.title}</h3>
+              <div className="artwork-subdetails">
+                <p className="artwork-artist">{artwork.artist_name}</p>
+                <p className="artwork-year">{artwork.year}</p>
+              </div>
+            </div>
           </div>
         ))}
-      </div>
+      </Masonry>
     </div>
   );
 };

@@ -16,6 +16,7 @@ from app.schemas import (
     StopListeningRequest
 )
 
+from fastapi.middleware.cors import CORSMiddleware
 
 def get_db():
     db = SessionLocal()
@@ -26,6 +27,14 @@ def get_db():
         
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 모든 도메인 허용
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # 애플리케이션 시작 시 DB 초기화
 @app.on_event("startup")

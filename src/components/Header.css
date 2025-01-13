@@ -1,3 +1,12 @@
+header {
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0; /* 화면의 맨 위에 위치 */
+  left: 0; /* 화면의 왼쪽에 위치 */
+  width: 100%; /* 헤더가 화면 전체를 차지 */
+  z-index: 9999; /* 다른 요소들보다 위에 표시 */
+  background: linear-gradient(-45deg, #070707, #5c5b5b);
+}
+
 .title-container {
   display: flex;
   justify-content: center; /* 로고를 가운데 정렬 */
@@ -5,7 +14,7 @@
   width: 100%;
   position: relative;
   padding: 0 30px; /* 양쪽 여백 */
-  height: 120px; /* 타이틀 영역 높이 */
+  height: 110px; /* 타이틀 영역 높이 */
   box-sizing: border-box;
 }
 
@@ -38,7 +47,7 @@
 .search-bar {
   position: fixed;
   top: 72px;
-  left: 80px;
+  left: 100px;
   display: flex;
   align-items: center;
   z-index: 1000;
@@ -58,7 +67,7 @@
 .nav {
   position: fixed;
   top: 70px;
-  right: 80px;
+  right: 100px;
   display: flex;
   gap: 10px;
   align-items: center;
