@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/Logo.svg";
-import search from "../assets/search.svg";
-import searchbar from "../assets/search_bar.svg";
+import { useTheme } from "./ThemeContext";
 import { useNavigate } from "react-router-dom";
-import "./Header.css"; 
-
+import logo from "../assets/Logo.svg";
+import logoDay from "../assets/daylogo.svg";
+import search from "../assets/search.svg";
+import daysearch from "../assets/daysearch.svg";
+import searchbar from "../assets/search_bar.svg";
+import dayIcon from "../assets/sun.svg"; // 낮 아이콘
+import nightIcon from "../assets/moon.svg";
+import "./Header.css";
 
 const Header = () => {
-  const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const [isSignupOpen, setIsSignupOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
-  const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
+  const [isFlipped, setIsFlipped] = useState(false); // 카드 뒤집힘 상태 관리
 
-  const openLoginModal = () => setIsLoginOpen(true);
-  const closeLoginModal = () => setIsLoginOpen(false);
-
-  const openSignupModal = () => setIsSignupOpen(true);
-  const closeSignupModal = () => setIsSignupOpen(false);
+  const handleCardClick = () => {
+    setIsFlipped((prev) => !prev); // 클릭 시 상태 반전
+  };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -28,63 +29,73 @@ const Header = () => {
     }
   };
 
-
-  const handleLoginSubmit = (e) => {
-    e.preventDefault();
-    console.log("Login submitted");
-    closeLoginModal();
+  const handleLogoClick = () => {
+    navigate("/"); // Home 페이지로 이동
   };
 
-  const handleSignupSubmit = (e) => {
-    e.preventDefault();
-    console.log("Signup submitted");
-    closeSignupModal();
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        closeLoginModal();
-        closeSignupModal();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  //낮밤
+  const { isNight, toggleTheme } = useTheme();
 
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={{
+        background: isNight
+          ? "linear-gradient(-45deg, #070707, #5c5b5b)"
+          : "linear-gradient(-45deg, #E9CC75, #E5DFDF)",
+        transition: "background 0.7s ease",
+      }}
+    >
       <div className="title-container">
         {/* 검색 섹션 */}
         <div className="search-bar">
           <img
-            src={search}
+            src={isNight ? search : daysearch}
             alt="Search"
             className="search-icon"
             onClick={toggleSearch}
           />
         </div>
-        <div className="title">
-          {<img src={logo} alt="Logo" className="logo" />}
-          <div className="title-line"></div>
+        <div
+          className="title"
+          onClick={handleLogoClick}
+          style={{ cursor: "pointer" }}
+        >
+          {<img src={isNight ? logo : logoDay} alt="Logo" className="logo" />}
+          <div
+            className="title-line"
+            style={{
+              background: isNight ? "#efe1b6" : "#5A5959",
+            }}
+          ></div>
         </div>
         {/* 네비게이션 */}
-        <nav className="nav">
-          <button className="nav-button" onClick={openLoginModal}>
-            Login
-          </button>
-          <span>|</span>
-          <button className="nav-button" onClick={openSignupModal}>
-            Sign Up
-          </button>
-        </nav>
+        <div
+          className={`toggle-card ${isFlipped ? "flipped" : ""}`}
+          onClick={() => {
+            handleCardClick(); // 카드 뒤집힘 상태 변경
+            toggleTheme(); // 낮/밤 전환
+          }}
+        >
+          {/* 카드 앞면 (밤 아이콘) */}
+          <div className="toggle-front">
+            <img src={nightIcon} alt="Night Mode" className="theme-icon" />
+          </div>
+          {/* 카드 뒷면 (낮 아이콘) */}
+          <div className="toggle-back">
+            <img src={dayIcon} alt="Day Mode" className="theme-icon" />
+          </div>
+        </div>
       </div>
 
       {isSearchOpen && (
         <div className="search-container">
           <form onSubmit={handleSearchSubmit}>
-            <img src={searchbar} alt="Search Icon" className="search-icon-bar" />
+            <img
+              src={searchbar}
+              alt="Search Icon"
+              className="search-icon-bar"
+            />
             <input
               type="text"
               placeholder="Search..."
@@ -92,40 +103,10 @@ const Header = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-input"
             />
-            <button type="submit" className="search-btn">Search</button>
+            <button type="submit" className="search-btn">
+              Search
+            </button>
           </form>
-        </div>
-      )}
-
-      {/* 로그인 모달 */}
-      {isLoginOpen && (
-        <div className="modal-overlay" onClick={closeLoginModal}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h2>Login</h2>
-            <form onSubmit={handleLoginSubmit}>
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <button type="submit" className="login-btn">
-                Login
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* 회원가입 모달 */}
-      {isSignupOpen && (
-        <div className="modal-overlay" onClick={closeSignupModal}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h2>Sign Up</h2>
-            <form onSubmit={handleSignupSubmit}>
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <button type="submit" className="signup-btn">
-                Sign Up
-              </button>
-            </form>
-          </div>
         </div>
       )}
     </header>

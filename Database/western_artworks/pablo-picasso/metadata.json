@@ -1,0 +1,72 @@
+[
+    {
+        "title": "The Picador",
+        "year": 1890,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/01_The picador.jpg",
+        "image_url": "https://uploads1.wikiart.org/images/pablo-picasso/the-picador-1890.jpg!Large.jpg"
+    },
+    {
+        "title": "House in the field",
+        "year": 1893,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/02_House in the field.jpg",
+        "image_url": "https://uploads8.wikiart.org/images/pablo-picasso/house-in-the-field-1893.jpg!Large.jpg"
+    },
+    {
+        "title": "Plaster male torso",
+        "year": 1893,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/03_Plaster male torso.jpg",
+        "image_url": "https://uploads8.wikiart.org/images/pablo-picasso/plaster-male-torso-1893.jpg!Large.jpg"
+    },
+    {
+        "title": "Academical study",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/04_Academical study.jpg",
+        "image_url": "https://uploads1.wikiart.org/images/pablo-picasso/academical-study.jpg!Large.jpg"
+    },
+    {
+        "title": "Bust of young man",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/05_Bust of young man.jpg",
+        "image_url": "https://uploads2.wikiart.org/images/pablo-picasso/bust-of-young-man.jpg!Large.jpg"
+    },
+    {
+        "title": "Female nude from back",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/06_Female nude from back.jpg",
+        "image_url": "https://uploads2.wikiart.org/images/pablo-picasso/female-nude-from-back-1895.jpg!Large.jpg"
+    },
+    {
+        "title": "The barefoot girl",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/07_The barefoot girl.jpg",
+        "image_url": "https://uploads7.wikiart.org/images/pablo-picasso/the-barefoot-girl-1895.jpg!Large.jpg"
+    },
+    {
+        "title": "The old fisherman",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/08_The old fisherman.jpg",
+        "image_url": "https://uploads7.wikiart.org/images/pablo-picasso/the-old-fisherman-1895.jpg!Large.jpg"
+    },
+    {
+        "title": "Alicante, view of boats",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/09_Alicante, view of boats.jpg",
+        "image_url": "https://uploads7.wikiart.org/images/pablo-picasso/alicante-view-of-boats.jpg!Large.jpg"
+    },
+    {
+        "title": "View of the port of Valencia",
+        "year": 1895,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/pablo-picasso/10_View of the port of Valencia.jpg",
+        "image_url": "https://uploads4.wikiart.org/images/pablo-picasso/view-of-the-port-of-valencia.jpg!Large.jpg"
+    }
+]

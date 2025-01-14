@@ -1,0 +1,22 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: #535353; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /*스크롤바 뒷 배경 색상*/
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Vilabertrin",
+        "year": 1913,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/01_Vilabertrin.jpg",
+        "image_url": "https://uploads5.wikiart.org/images/salvador-dali/vilabertrin.jpg!Large.jpg"
+    },
+    {
+        "title": "Landscape",
+        "year": 1914,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/02_Landscape.jpg",
+        "image_url": "https://uploads5.wikiart.org/00162/images/salvador-dali/3salvador-dali-peyzazh-bliz-figerasa.jpg!Large.jpg"
+    },
+    {
+        "title": "Dutch Interior",
+        "year": 1914,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/03_Dutch Interior.jpg",
+        "image_url": "https://uploads8.wikiart.org/images/salvador-dali/dutch-interior.jpg!Large.jpg"
+    },
+    {
+        "title": "Landscape Near Ampurdan",
+        "year": 1914,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/04_Landscape Near Ampurdan.jpg",
+        "image_url": "https://uploads1.wikiart.org/images/salvador-dali/landscape-near-ampurdan-2.jpg!Large.jpg"
+    },
+    {
+        "title": "Fiesta in Figueres",
+        "year": 1916,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/05_Fiesta in Figueres.jpg",
+        "image_url": "https://uploads8.wikiart.org/images/salvador-dali/fiesta-in-figueres-1916.jpg!Large.jpg"
+    },
+    {
+        "title": "Landscape",
+        "year": 1916,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/06_Landscape.jpg",
+        "image_url": "https://uploads5.wikiart.org/images/salvador-dali/landscape-2.jpg!Large.jpg"
+    },
+    {
+        "title": "Landscape with Animals",
+        "year": 1916,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/07_Landscape with Animals.jpg",
+        "image_url": "https://uploads7.wikiart.org/images/salvador-dali/landscape-with-animals.jpg!Large.jpg"
+    },
+    {
+        "title": "Cadaques",
+        "year": 1917,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/08_Cadaques.jpg",
+        "image_url": "https://uploads4.wikiart.org/images/salvador-dali/cadaques-2.jpg!Large.jpg"
+    },
+    {
+        "title": "Boat",
+        "year": 1918,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/09_Boat.jpg",
+        "image_url": "https://uploads4.wikiart.org/00116/images/salvador-dali/boat.jpg!Large.jpg"
+    },
+    {
+        "title": "Crepuscular Old Man",
+        "year": 1918,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/salvador-dali/10_Crepuscular Old Man.jpg",
+        "image_url": "https://uploads0.wikiart.org/images/salvador-dali/crepuscular-old-man-1918.jpg!Large.jpg"
+    }
+]

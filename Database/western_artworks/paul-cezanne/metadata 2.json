@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Landscape with Mill",
+        "year": 1860,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/01_Landscape with Mill.jpg",
+        "image_url": "https://uploads8.wikiart.org/images/paul-cezanne/landscape-with-mill-1860.jpg!Large.jpg"
+    },
+    {
+        "title": "The Kiss of the Muse",
+        "year": 1860,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/02_The Kiss of the Muse.jpg",
+        "image_url": "https://uploads4.wikiart.org/images/paul-cezanne/the-kiss-of-the-muse.jpg!Large.jpg"
+    },
+    {
+        "title": "The Four Seasons, Autumn",
+        "year": 1861,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/03_The Four Seasons, Autumn.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/paul-cezanne/the-four-seasons-autumn-1861.jpg!Large.jpg"
+    },
+    {
+        "title": "The Four Seasons, Spring",
+        "year": 1861,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/04_The Four Seasons, Spring.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/paul-cezanne/the-four-seasons-spring-1861.jpg!Large.jpg"
+    },
+    {
+        "title": "The Four Seasons, Summer",
+        "year": 1861,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/05_The Four Seasons, Summer.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/paul-cezanne/the-four-seasons-summer-1861.jpg!Large.jpg"
+    },
+    {
+        "title": "The Four Seasons, Winter",
+        "year": 1861,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/06_The Four Seasons, Winter.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/paul-cezanne/the-four-seasons-winter-1861.jpg!Large.jpg"
+    },
+    {
+        "title": "Interior with Two Women and a Child",
+        "year": 1861,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/07_Interior with Two Women and a Child.jpg",
+        "image_url": "https://uploads1.wikiart.org/images/paul-cezanne/interior-with-two-women-and-a-child.jpg!Large.jpg"
+    },
+    {
+        "title": "A male nude",
+        "year": 1863,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/08_A male nude.jpg",
+        "image_url": "https://uploads0.wikiart.org/images/paul-cezanne/a-male-nude-1863.jpg!Large.jpg"
+    },
+    {
+        "title": "Fisherman on the Rocks",
+        "year": 1864,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/09_Fisherman on the Rocks.jpg",
+        "image_url": "https://uploads6.wikiart.org/images/paul-cezanne/fisherman-on-the-rocks.jpg!Large.jpg"
+    },
+    {
+        "title": "Portrait of a Man",
+        "year": 1864,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/paul-cezanne/10_Portrait of a Man.jpg",
+        "image_url": "https://uploads6.wikiart.org/images/paul-cezanne/portrait-of-a-man-1864.jpg!Large.jpg"
+    }
+]

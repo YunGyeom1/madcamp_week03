@@ -5,6 +5,8 @@ from sqlalchemy.sql.expression import func
 from typing import List, Tuple
 import random
 
+from sqlalchemy.sql.expression import func
+
 # 벡터 저장
 # def save_vectors(session: Session, artwork_vectors: List[Tuple[int, List[float]]]):
 #     for artwork_id, vector in artwork_vectors:
