@@ -2,12 +2,16 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/Logo.svg";
 import search from "../assets/search.svg";
 import searchbar from "../assets/search_bar.svg";
-import "./Header.css";
+import { useNavigate } from "react-router-dom";
+import "./Header.css"; 
+
 
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSignupOpen, setIsSignupOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
 
@@ -16,6 +20,14 @@ const Header = () => {
 
   const openSignupModal = () => setIsSignupOpen(true);
   const closeSignupModal = () => setIsSignupOpen(false);
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      window.location.href = `/search?tag=${searchQuery.trim()}`;
+    }
+  };
+
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
@@ -71,8 +83,17 @@ const Header = () => {
 
       {isSearchOpen && (
         <div className="search-container">
-          <img src={searchbar} alt="Search Icon" class="search-icon-bar" />
-          <input type="text" placeholder="Search..." className="search-input" />
+          <form onSubmit={handleSearchSubmit}>
+            <img src={searchbar} alt="Search Icon" className="search-icon-bar" />
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="search-input"
+            />
+            <button type="submit" className="search-btn">Search</button>
+          </form>
         </div>
       )}
 

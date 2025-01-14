@@ -79,11 +79,15 @@ body {
 }
 
 .grid-item:hover .artwork-image {
-  opacity: 0;
+  opacity: 1;
 }
 
 .grid-item:hover .artwork-video {
   opacity: 1;
+}
+
+.artwork-video:not([src]) { 
+  display: none; /* 비디오가 없는 경우 숨김 */
 }
 
 .loading-spinner {
@@ -119,4 +123,11 @@ body {
   gap: 10px;
   font-size: 14px;
   color: #555;
+}
+
+.artwork-image,
+.artwork-video {
+  backface-visibility: hidden; /* 깜빡임 방지 */
+  will-change: opacity, transform; /* 퍼포먼스 최적화 */
+  transition: opacity 0.3s ease; /* 동일한 전환 시간 */
 }

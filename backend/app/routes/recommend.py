@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from app.db.models import Artwork, ArtworkVector, Like
 #from sentence_transformers import SentenceTransformer, util
+from sqlalchemy.sql.expression import func
 from typing import List, Tuple
 import random
 
@@ -19,7 +20,7 @@ import random
     # ]
 
 def get_artworks(session: Session):
-    artworks = session.query(Artwork).all()
+    artworks = session.query(Artwork).order_by(func.random()).all()
     return artworks
 
 # def get_similar_artworks(
