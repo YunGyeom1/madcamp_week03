@@ -4,6 +4,8 @@
   text-align: center;
   height: 100vh;
   width: 100%;
+  overflow-y: overlay;
+  scrollbar-width: none;
 }
 
 html,
@@ -17,7 +19,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px; /* 스크롤바의 너비 */
+  width: 0px; /* 스크롤바의 너비 */
 }
 
 body::-webkit-scrollbar-thumb {

@@ -89,8 +89,8 @@ const Header = () => {
       </div>
 
       {isSearchOpen && (
-        <div className="search-container">
-          <form onSubmit={handleSearchSubmit}>
+        <form onSubmit={handleSearchSubmit}>
+          <div className="search-container">
             <img
               src={searchbar}
               alt="Search Icon"
@@ -106,8 +106,8 @@ const Header = () => {
             <button type="submit" className="search-btn">
               Search
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       )}
     </header>
   );

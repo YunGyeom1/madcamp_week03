@@ -131,8 +131,8 @@ body {
 .card-back {
   align-items: center;
   flex-direction: column;
-  background-color: #555;
-  color: #fff;
+  background-color: #e9cd7b;
+  color: #404040;
   transform: rotateY(180deg);
 }
 

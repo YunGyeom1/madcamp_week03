@@ -101,38 +101,42 @@ header {
 /* 검색창 컨테이너 */
 .search-container {
   display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
   position: fixed;
-  margin-top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  top: 100px;
-  width: 50%;
-  justify-content: center;
-  animation: SlideDown 0.3s ease-in-out;
-  background-color: #e0e0e0;
-  opacity: 40%;
-  border-color: transparent;
+  top: 130px;
+  width: 55%;
+  background-color: #555555;
+  opacity: 95%;
+  border: none;
   border-radius: 10px;
+  padding: 5px 10px; /* 내부 여백 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .search-icon-bar {
-  padding-top: 10px;
-  padding-left: 12px;
+  padding-left: 10px;
   width: 35px;
   height: 35px;
   z-index: 1000;
 }
 
 .search-input {
-  width: 90%;
-  height: 30px;
-  padding: 10px;
-  background-color: #e0e0e0;
-  opacity: 40%;
-  border-color: transparent;
-  color: #000000;
+  flex: 1; /* 남은 공간을 채우도록 설정 */
+  height: 50px;
+  background-color: #555555;
+  border: none;
+  color: #ffffff;
   font-size: 18px;
+  padding: 0 10px;
+  border-radius: 5px;
   outline: none;
+}
+
+.search-input::placeholder {
+  color: #aaaaaa; /* 플레이스홀더 텍스트 색상 */
 }
 
 /* 검색창 애니메이션 */

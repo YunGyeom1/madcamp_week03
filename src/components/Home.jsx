@@ -67,16 +67,20 @@ const Home = () => {
     500: 1, // 너비 500px 이하일 때 1열
   };
 
-  // 첫번째 useEffect 데이터 가져오기
-  React.useEffect(() => {
-    fetchArtworks();
-  }, []);
+  useEffect(() => {
+    if (!location.search) {
+      fetchArtworks(); // 초기 로드 시 실행
+    }
+  }, [location.search]);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const tag = queryParams.get("tag") || "";
     setSearchQuery(tag);
-    fetchArtworks(tag); // 쿼리 파라미터 기반 데이터 로드
+
+    if (tag) {
+      fetchArtworks(tag); // 검색어가 있을 때만 실행
+    }
   }, [location.search]);
 
   return (
