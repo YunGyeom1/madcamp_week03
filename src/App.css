@@ -2,21 +2,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow-y: overlay;
   scrollbar-width: none;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  height: 100%;
-  background: linear-gradient(-45deg, #070707, #5c5b5b);
-  background-attachment: fixed; /* 배경을 고정 */
-}
 
 body::-webkit-scrollbar {
   width: 0px; /* 스크롤바의 너비 */

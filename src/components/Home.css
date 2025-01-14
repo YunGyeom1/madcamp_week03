@@ -5,6 +5,8 @@ body {
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
   height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .Home {

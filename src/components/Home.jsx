@@ -20,7 +20,7 @@ const Home = () => {
     document.body.style.backgroundAttachment = "fixed";
   }, [isNight]);
 
-  const fetchArtworks = async (query) => {
+  const fetchArtworks = async (query = "") => {
     try {
       const endpoint = query
         ? `http://localhost:8000/search?tag=${query}` // 검색어가 있을 때
@@ -37,6 +37,22 @@ const Home = () => {
       console.error(error);
     }
   };
+
+  useEffect(() => {
+    if (!location.search) {
+      fetchArtworks(); // 초기 로드 시 실행
+    }
+  }, [location.search]);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const tag = queryParams.get("tag") || "";
+    setSearchQuery(tag);
+
+    if (tag) {
+      fetchArtworks(tag); // 검색어가 있을 때만 실행
+    }
+  }, [location.search]);
 
   const handleMouseEnter = (id) => {
     const video = videoRefs.current[id];
@@ -105,8 +121,6 @@ const Home = () => {
                   className="artwork-video"
                   muted
                   loop
-                  onLoadStart={() => handleVideoLoadStart(artwork.id)}
-                  onLoadedData={() => handleVideoLoaded(artwork.id)}
                 />
                 <audio
                   ref={(el) => (audioRefs.current[artwork.id] = el)}

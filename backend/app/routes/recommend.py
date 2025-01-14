@@ -1,8 +1,10 @@
 from sqlalchemy.orm import Session
 from app.db.models import Artwork, ArtworkVector, Like
 #from sentence_transformers import SentenceTransformer, util
+from sqlalchemy.sql.expression import func
 from typing import List, Tuple
 import random
+
 from sqlalchemy.sql.expression import func
 
 # 벡터 저장

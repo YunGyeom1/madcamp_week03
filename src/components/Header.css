@@ -18,7 +18,7 @@ header {
   box-sizing: border-box;
 }
 
-.title {
+.title { 
   position: fixed;
   top: 0;
   left: 0;
