@@ -57,6 +57,7 @@ const Home = () => {
     setSearchQuery(tag);
     fetchArtworks(tag); // 쿼리 파라미터 기반 데이터 로드
   }, [location.search]);
+
   return (
     <div className="Home">
       <Masonry
@@ -81,7 +82,6 @@ const Home = () => {
                 className="artwork-video"
                 loop
                 muted
-                
                 onLoadStart={() => handleVideoLoadStart(artwork.id)}
                 onLoadedData={() => handleVideoLoaded(artwork.id)}
               />
