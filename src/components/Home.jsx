@@ -1,11 +1,21 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
+import { useTheme } from "./ThemeContext";
 import "./Home.css";
 
 const Home = () => {
   const [artworks, setArtworks] = useState([]);
-  const [loadingVideos, setLoadingVideos] = useState({}); // 로딩 상태 관리
   const videoRefs = useRef({});
+  const { isNight } = useTheme();
+
+  useEffect(() => {
+    document.body.style.background = isNight
+      ? "linear-gradient(-45deg, #070707, #5c5b5b)"
+      : "linear-gradient(-45deg, #E9CC75, #E5DFDF)";
+    document.body.style.transition = "background 0.5s ease";
+    document.body.style.color = isNight ? "#e0e0e0" : "#000000";
+    document.body.style.backgroundAttachment = "fixed";
+  }, [isNight]);
 
   // API 호출 함수
   const fetchArtworks = async () => {
@@ -38,14 +48,6 @@ const Home = () => {
     }
   };
 
-  const handleVideoLoadStart = (id) => {
-    setLoadingVideos((prev) => ({ ...prev, [id]: true })); // 로딩 시작
-  };
-
-  const handleVideoLoaded = (id) => {
-    setLoadingVideos((prev) => ({ ...prev, [id]: false })); // 로딩 완료
-  };
-
   const breakpointColumns = {
     default: 3, // 기본 열 수
     1100: 2, // 너비 1100px 이하일 때 3열
@@ -67,34 +69,61 @@ const Home = () => {
       >
         {artworks.map((artwork) => (
           <div
-            className="grid-item"
+            className={`grid-item ${isNight ? "" : "flippable"}`}
             key={artwork.id}
             onMouseEnter={() => handleMouseEnter(artwork.id)}
             onMouseLeave={() => handleMouseLeave(artwork.id)}
           >
-            <div className="media-container">
-              {/* 로딩 스피너 */}
-              {loadingVideos[artwork.id] && (
-                <div className="loading-spinner">Loading...</div>
-              )}
-              <video
-                ref={(el) => (videoRefs.current[artwork.id] = el)} // videoRefs에 저장
-                src={artwork.description_mp4_url}
-                className="artwork-video"
-                muted
-                loop
-                onLoadStart={() => handleVideoLoadStart(artwork.id)}
-                onLoadedData={() => handleVideoLoaded(artwork.id)}
-              />
-              <img
-                src={artwork.image_url}
-                alt={artwork.artist_name || "Artwork"}
-                className="artwork-image"
-              />
-            </div>
-            <div className="artwork-details">
+            {isNight ? (
+              <div className="media-container">
+                <video
+                  ref={(el) => (videoRefs.current[artwork.id] = el)} // videoRefs에 저장
+                  src={artwork.description_mp4_url}
+                  className="artwork-video"
+                  muted
+                  loop
+                  onLoadStart={() => handleVideoLoadStart(artwork.id)}
+                  onLoadedData={() => handleVideoLoaded(artwork.id)}
+                />
+                <img
+                  src={artwork.image_url}
+                  alt={artwork.artist_name || "Artwork"}
+                  className="artwork-image"
+                />
+              </div>
+            ) : (
+              <div className="card">
+                <div className="card-front">
+                  <img
+                    src={artwork.image_url}
+                    alt={artwork.artist_name || "Artwork"}
+                    className="artwork-image"
+                  />
+                </div>
+                <div className="card-back">
+                  <h3 className="artwork-title">{artwork.title}</h3>
+                  <p className="artwork-artist">{artwork.artist_name}</p>
+                  <p className="artwork-year">{artwork.year}</p>
+                  <p className="artwork-description">
+                    {artwork.description_txt}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            <div
+              className="artwork-details"
+              style={{
+                color: isNight ? "#e0e0e0" : "#131313",
+              }}
+            >
               <h3 className="artwork-title">{artwork.title}</h3>
-              <div className="artwork-subdetails">
+              <div
+                className="artwork-subdetails"
+                style={{
+                  color: isNight ? "#e0e0e0" : "#131313",
+                }}
+              >
                 <p className="artwork-artist">{artwork.artist_name}</p>
                 <p className="artwork-year">{artwork.year}</p>
               </div>
