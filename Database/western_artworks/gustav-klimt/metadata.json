@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Portrait of a Girl, Head Slightly Turned Left",
+        "year": 1879,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/01_Portrait of a Girl, Head Slightly Turned Left.jpg",
+        "image_url": "https://uploads1.wikiart.org/images/gustav-klimt/portrait-of-a-girl-head-slightly-turned-left.jpg!Large.jpg"
+    },
+    {
+        "title": "Portrait of a man with beard",
+        "year": 1879,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/02_Portrait of a man with beard.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/gustav-klimt/portrait-of-a-man-with-beard.jpg!Large.jpg"
+    },
+    {
+        "title": "Portrait of a man with beard in three quarter profil",
+        "year": 1879,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/03_Portrait of a man with beard in three quarter profil.jpg",
+        "image_url": "https://uploads0.wikiart.org/images/gustav-klimt/portrait-of-a-man-with-beard-in-three-quarter-profil.jpg!Large.jpg"
+    },
+    {
+        "title": "Klara Klimt",
+        "year": 1880,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/04_Klara Klimt.jpg",
+        "image_url": "https://uploads5.wikiart.org/00475/images/gustav-klimt/klara-klimt-c-1880.jpg!Large.jpg"
+    },
+    {
+        "title": "Head Study of a Girl from Haná",
+        "year": 1883,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/05_Head Study of a Girl from Haná.jpg",
+        "image_url": "https://uploads3.wikiart.org/00475/images/gustav-klimt/head-study-of-a-girl-from-han-1883.jpg!Large.jpg"
+    },
+    {
+        "title": "Sitting Nude Man Turned to the Left",
+        "year": 1883,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/06_Sitting Nude Man Turned to the Left.jpg",
+        "image_url": "https://uploads0.wikiart.org/00475/images/gustav-klimt/sitting-nude-man-turned-to-the-left-1883.jpg!Large.jpg"
+    },
+    {
+        "title": "Fable",
+        "year": 1883,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/07_Fable.jpg",
+        "image_url": "https://uploads6.wikiart.org/00381/images/gustav-klimt/fable-gustav-klimt-gustav-klimt-67693-95163-1625195763.jpg!Large.jpg"
+    },
+    {
+        "title": "Design for a theater curtain",
+        "year": 1883,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/08_Design for a theater curtain.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/gustav-klimt/design-for-a-theater-curtain.jpg!Large.jpg"
+    },
+    {
+        "title": "Idylle (Idylls)",
+        "year": 1884,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/09_Idylle (Idylls).jpg",
+        "image_url": "https://uploads3.wikiart.org/00381/images/gustav-klimt/idylle-1884-gustav-klimt.jpg!Large.jpg"
+    },
+    {
+        "title": "Female organ player",
+        "year": 1885,
+        "style": "Unknown",
+        "image_path": "../Database/western_artworks/gustav-klimt/10_Female organ player.jpg",
+        "image_url": "https://uploads3.wikiart.org/images/gustav-klimt/female-organ-player.jpg!Large.jpg"
+    }
+]
