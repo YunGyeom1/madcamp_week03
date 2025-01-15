@@ -18,6 +18,7 @@ body {
   margin: 30px;
   height: 100vh;
 }
+
 .my-masonry-grid {
   display: flex;
   margin-left: -20px; /* gutter 크기 */
@@ -118,7 +119,7 @@ body {
 .card-back {
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* 뒤집힘 감추기 */
+  backface-visibility: hidden; 3333/* 뒤집힘 감추기 */
   display: flex;
   justify-content: center;
   align-items: center;
