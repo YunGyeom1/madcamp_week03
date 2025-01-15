@@ -22,7 +22,7 @@ from sqlalchemy.sql.expression import func
     # ]
 
 def get_artworks(session: Session):
-    artworks = session.query(Artwork).order_by(func.random()).all()
+    artworks = session.query(Artwork).filter(Artwork.id <= 150).order_by(func.random()).all()
     return artworks
 
 # def get_similar_artworks(

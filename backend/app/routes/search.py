@@ -11,4 +11,5 @@ def search_by_tag(session: Session, tag: str):
         .order_by(func.random())
         .all()
     )
+
     return results

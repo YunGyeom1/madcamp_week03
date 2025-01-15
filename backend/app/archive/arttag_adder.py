@@ -14,8 +14,9 @@ engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
+
 # ArtTag에 작가 이름, 제목 추가
-for artwork in session.query(Artwork).all():
+for artwork in session.query(Artwork).filter(Artwork.id > 150).all():
     # 작가 이름 추가
     artist_tag = ArtTag(
         artwork_id=artwork.id,
